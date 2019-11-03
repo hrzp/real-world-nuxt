@@ -1,5 +1,5 @@
 <template>
-  <h1>Followrs are: []</h1>
+  <h1>{{username}} Followrs are: []</h1>
 </template>
 
 
@@ -7,14 +7,19 @@
 export default {
   head() {
     return {
-      titleTemplate: 'Followers',
+      titleTemplate: this.username + ' Followers',
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Followers Page'
+          content: this.username + 'Followers Page'
         }
       ]
+    }
+  },
+  computed: {
+    username() {
+      return this.$route.params.username
     }
   }
 }
