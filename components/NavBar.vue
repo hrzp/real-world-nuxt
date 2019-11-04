@@ -6,6 +6,7 @@
       <nuxt-link to="event/create">Create</nuxt-link>|
       <nuxt-link to="/hamid-page">HRZP</nuxt-link>|
       <nuxt-link to="/hamid-page/followers">Followers</nuxt-link>
+      <nuxt-link to="/todos">Todos</nuxt-link>|
     </nav>
   </div>
 </template>
